@@ -50,6 +50,7 @@ include_directories(
 add_executable(dem_to_occupancy
   src/dem_to_occupancy.cpp
 )
+add_dependencies(dem_to_occupancy ${catkin_EXPORTED_TARGETS})
 
 target_link_libraries(dem_to_occupancy
   ${Boost_LIBRARIES}
